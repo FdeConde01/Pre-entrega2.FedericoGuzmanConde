@@ -10,6 +10,14 @@ a {
 ul{
     list-style-type: none;
 }
+@keyframes animacion{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 /* Encabezado */
 header{
     background-color: #D5D5D5;
@@ -70,6 +78,7 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
     font-size: 20px;
+    animation: ease-in animacion 1s;
 }
 .principal__contenido-img img{
     width: 250px;
@@ -131,6 +140,7 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
     font-size: 20px;
+    animation: ease-in animacion 1.5s;
 }
 .final{
     text-align: center;
@@ -144,6 +154,7 @@ header{
 }
 .final__tortas{
     text-align: center;
+    animation: ease-in animacion 2s;
 }
 .final__tortas button{
     border: 3px solid #EB1D36;
@@ -175,9 +186,11 @@ header{
 .final__img img{
     height: 120px;
     width: 250px;
+    animation: ease-in animacion 2s;
 }
 .final__contacto{
     text-align: center;
+    animation: ease-in animacion 2s;
 }
 .final__contacto h1{
     color: #FA9494;
