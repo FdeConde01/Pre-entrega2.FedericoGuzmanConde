@@ -338,7 +338,7 @@ footer li a:hover{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
     font-size: 20px;
-    list-style-type: circle;
+    list-style-type: disc;
 }
 .pan{
     list-style-type: square;
@@ -365,7 +365,7 @@ footer li a:hover{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
     font-size: 20px;color: black;
-    list-style-type: circle;
+    list-style-type: disc;
 }
 /* Nosotros */
 .pagnosotros{
@@ -381,6 +381,7 @@ footer li a:hover{
     font-family: 'Lora', serif;
     font-style: italic;
     font-size: 40px;
+    animation: ease-in animacion 1s;
 }
 .pagnosotros__contenido h2{
     margin-top: 20px;
@@ -388,12 +389,14 @@ footer li a:hover{
     font-family: 'Lora', serif;
     font-style: italic;
     font-size: 20px;
+    animation: ease-in animacion 0.5s;
 }
 .pagnosotros__contenido p{
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
     font-size: 20px;
+    animation: ease-in animacion 1.2s;
 }
 /* Mobile last */
 @media (max-width: 576px){
@@ -468,4 +471,33 @@ footer li a:hover{
     .final__contacto p{
         font-size: 18px;
     }
+    .pagnosotros__contenido{
+        text-align: justify;
+        padding: 20px;
+    }
+    .pagnosotros__contenido h2{
+        text-align: center;
+    }
+    .pagnosotros__contenido h1{
+        text-align: center;
+    }
+    .panaderia__contenido{
+        padding: 20px;
+    }
+    .panaderia__contenido-lista{
+        padding: 20px;
+    }
+    .vinoteca__contenido{
+        padding: 20px;
+    }
+    .vinoteca__contenido-lista{
+        padding: 20px;
+    }
+    .formulario__contenido{
+        padding: 20px;
+    }
+    .contacto__contenido{
+        text-align: center;
+    }
+
 }
