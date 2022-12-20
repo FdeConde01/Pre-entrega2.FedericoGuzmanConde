@@ -101,6 +101,7 @@ header{
 }
 .principal__contenido button a{
     color: black;
+    background-color: transparent;
     font-size: 15px;
     text-decoration: none;
 }
@@ -127,6 +128,7 @@ header{
 }
 .nosotros__contenido button a{
     color: black;
+    background-color: transparent;
     font-size: 15px;
 }
 .nosotros__contenido button:hover{
@@ -168,6 +170,7 @@ header{
 }
 .final__tortas button a{
     color: black;
+    background-color: transparent;
     font-size: 15px;
 }
 .final__tortas button:hover{
@@ -216,6 +219,7 @@ header{
 }
 .final__contacto button a{
     color: black;
+    background-color: transparent;
     font-size: 15px;
     text-decoration: none;
 }
@@ -346,6 +350,10 @@ footer li a:hover{
     list-style-type: square;
     margin-left: 20px;
 }
+.criollo{
+    list-style-type: square;
+    margin-left: 20px;
+}
 .vinoteca{
     background-color: #D5D5D5;
     display: flex;
@@ -368,6 +376,38 @@ footer li a:hover{
     margin-top: 10px;
     font-size: 20px;color: black;
     list-style-type: disc;
+}
+.tortas{
+    background-color: #D5D5D5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.tortas h1{
+    color: #FA9494;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tortas p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.tortas__contenido-img{
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+}
+.tortas img{
+    width: 300px;
+    height: 250px;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 /* Nosotros */
 .pagnosotros{
@@ -500,5 +540,18 @@ footer li a:hover{
     .contacto__contenido{
         text-align: center;
     }
-
+    .formulario__contenido-h1{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .tortas{
+        padding: 20px;
+    }
+    .tortas__contenido-img{
+        grid-template-columns: repeat(2, 250px);
+    }
+    .tortas img{
+        width: 230px;
+        height: 180px;
+    }
 }
