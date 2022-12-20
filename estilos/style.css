@@ -80,6 +80,10 @@ header{
     font-size: 20px;
     animation: ease-in animacion 1s;
 }
+.principal__contenido-img{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+}
 .principal__contenido-img img{
     width: 250px;
     height: 180px;
@@ -145,16 +149,14 @@ header{
 .final{
     text-align: center;
     background-color: #D5D5D5;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     max-width: 1200px;
     margin: 0 auto;
 }
 .final__tortas{
     text-align: center;
-    animation: ease-in animacion 2s;
+    animation: ease-in animacion 1.8s;
 }
 .final__tortas button{
     border: 3px solid #EB1D36;
@@ -186,11 +188,11 @@ header{
 .final__img img{
     height: 120px;
     width: 250px;
-    animation: ease-in animacion 2s;
+    animation: ease-in animacion 1.8s;
 }
 .final__contacto{
     text-align: center;
-    animation: ease-in animacion 2s;
+    animation: ease-in animacion 1.8s;
 }
 .final__contacto h1{
     color: #FA9494;
@@ -416,14 +418,13 @@ footer li a:hover{
         font-size: 18px;
     }
     .principal__contenido-img{
-        display: flex;
-        flex-direction: row;  
-        align-items: center; 
-        justify-content: center; 
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
     }
     .principal__contenido-img img{
-        width: 200px;
-        height: 130px;
+        width: 150px;
+        height: 100px;
     }
     .principal__contenido-button{
         display: flex;
